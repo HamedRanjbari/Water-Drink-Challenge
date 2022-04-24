@@ -1,0 +1,97 @@
+:root{
+    --light-blue: #6ab3af;
+    --dark-blue: #167acb;
+    --txt-white: rgb(255, 230, 230);
+    --white: #fff;
+}
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--dark-blue);
+    color: var(--txt-white);
+    margin-bottom: 50px;
+}
+h1{
+    margin: 10px 0 0;
+}
+h3{
+    font-weight: 400;
+    margin: 10px 0;
+}
+.mug{
+    background-color: var(--white);
+    border: 3px solid --dark-blue;
+    color: var(--dark-blue);
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.mug.mug-small{
+    width: 45px;
+    height: 95px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, .9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: .5s ease;
+}
+.mug.mug-small.full{
+    background-color: var(--light-blue);
+    color: var(--txt-white);
+}
+.mugs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 380px;
+}
+.remaining{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    transition: .5s ease;
+}
+.remaining span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.remaining small{
+    font-size: 14px;
+}
+.percent{
+    background-color: var(--light-blue);
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    transition:  .5s ease;
+}
+.text{
+    text-align: center;
+    margin: 0 0 5px;
+}
